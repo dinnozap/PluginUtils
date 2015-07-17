@@ -10,13 +10,39 @@ BLANCLAIR="\\033[1;08m"
 JAUNE="\\033[1;33m" 
 CYAN="\\033[1;36m"
 #Téléchargement du plugin
-read -p 'Quel plugin voulez vous éditer ?' plugin
+read -p 'Quel plugin voulez vous télécharger ?' plugin
 
 if [ "$plugin" = "Essentials" ]
 then
 	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
 	wget http://addons-origin.cursecdn.com/files/780/922/Essentials.zip	
 	echo -e $BLEU "Terminé !" $NORMAL
+elif [ "$plugin" = "plotme" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	wget https://www.spigotmc.org/attachments/plotme-zip.49848/?version=33525
+	echo -e $BLEU "Terminé !" $NORMAL
+elif [ "$plugin" = "Essential" ]
+then
+	echo -e $BLEU "Vous voulez dire Essentials ?" $NORMAL
+elif [ "$plugin" = "essentials" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	wget http://addons-origin.cursecdn.com/files/780/922/Essentials.zip	
+	echo -e $BLEU "Terminé !" $NORMAL
+elif [ "$plugin" = "lockette" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	wget http://addons-origin.cursecdn.com/files/879/473/Lockette.jar
+	echo -e $BLEU "Terminé !" $NORMAL
+elif [ "$plugin" = "Lockette" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	wget http://addons-origin.cursecdn.com/files/879/473/Lockette.jar
+	echo -e $BLEU "Terminé !" $NORMAL
+
+
+
 else
 echo -e $BLEU "$plugin est introuvable, Il apparaîtra peut-être dans une prochaine version de PluginUtils" $NORMAL
 
