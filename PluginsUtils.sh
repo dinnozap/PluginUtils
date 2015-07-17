@@ -15,7 +15,11 @@ read -p 'Quel plugin voulez vous télécharger ?' plugin
 if [ "$plugin" = "Essentials" ]
 then
 	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir Essentials
+	cd Essentials
 	wget http://addons-origin.cursecdn.com/files/780/922/Essentials.zip	
+	wget http://www.freevip.ovh/owncloud/index.php/s/1MPT2mni0OwLi39/download
+	nano download
 	echo -e $BLEU "Terminé !" $NORMAL
 elif [ "$plugin" = "plotme" ]
 then
@@ -28,7 +32,11 @@ then
 elif [ "$plugin" = "essentials" ]
 then
 	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
-	wget http://addons-origin.cursecdn.com/files/780/922/Essentials.zip	
+	mkdir Essentials
+	cd Essentials
+	wget http://addons-origin.cursecdn.com/files/780/922/Essentials.zip
+	wget http://www.freevip.ovh/owncloud/index.php/s/1MPT2mni0OwLi39/download
+	nano download
 	echo -e $BLEU "Terminé !" $NORMAL
 elif [ "$plugin" = "lockette" ]
 then
