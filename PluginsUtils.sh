@@ -15,7 +15,7 @@ BLANCLAIR="\\033[1;08m"
 JAUNE="\\033[1;33m" 
 CYAN="\\033[1;36m"
 #Téléchargement du plugin
-read -p 'Quel plugin voulez vous télécharger ?' plugin
+read -p 'Quel plugin voulez vous télécharger ? : ' plugin
 
 if [ "$plugin" = "Essentials" ]
 then
@@ -153,7 +153,64 @@ then
 	clear
 	echo -e $BLEU "Terminé !" $NORMAL
 	cd ..
+elif [ "$plugin" = "WorldGuard" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir WorldGuard
+	cd WorldGuard
+	wget http://addons-origin.cursecdn.com/files/881/691/worldguard-6.1.jar
+	wget http://www.freevip.ovh/owncloud/index.php/s/fDCZXZlq9Dmq7BH/download
+	mv download config.yml
+	gedit config.yml
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "Worldguard" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir WorldGuard
+	cd WorldGuard
+	wget http://addons-origin.cursecdn.com/files/881/691/worldguard-6.1.jar
+	wget http://www.freevip.ovh/owncloud/index.php/s/fDCZXZlq9Dmq7BH/download
+	mv download config.yml
+	gedit config.yml
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "worldguard" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir WorldGuard
+	cd WorldGuard
+	wget http://addons-origin.cursecdn.com/files/881/691/worldguard-6.1.jar
+	wget http://www.freevip.ovh/owncloud/index.php/s/fDCZXZlq9Dmq7BH/download
+	mv download config.yml
+	gedit config.yml
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "factions" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir Factions
+	cd Factions
+	wget http://addons-origin.cursecdn.com/files/889/302/Factions.jar
+	wget http://addons-origin.cursecdn.com/files/838/829/MassiveCore.jar
+	clear
+	echo -e $BLEU "Le plugin $plugin n'a pas de config !" $NORMAL
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "Factions" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir Factions
+	cd Factions
+	wget http://addons-origin.cursecdn.com/files/889/302/Factions.jar
+	wget http://addons-origin.cursecdn.com/files/838/829/MassiveCore.jar
+	clear
+	echo -e $BLEU "Le plugin $plugin n'a pas de config !" $NORMAL
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
 else
 echo -e $BLEU "$plugin est introuvable, Il apparaîtra peut-être dans une prochaine version de PluginUtils" $NORMAL
 fi
-#http://addons-origin.cursecdn.com/files/881/691/worldguard-6.1.jar
