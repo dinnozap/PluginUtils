@@ -211,6 +211,37 @@ then
 	echo -e $BLEU "Le plugin $plugin n'a pas de config !" $NORMAL
 	echo -e $BLEU "Terminé !" $NORMAL
 	cd ..
+elif [ "$plugin" = "dynmap" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir Dynmap
+	cd Dynmap
+	wget http://www.freevip.ovh/owncloud/index.php/s/M5xVelosPQU8enN/download
+	wget http://addons-origin.cursecdn.com/files/888/859/dynmap-2.2.jar
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "Dynmap" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir Dynmap
+	cd Dynmap
+	wget http://www.freevip.ovh/owncloud/index.php/s/M5xVelosPQU8enN/download
+	wget http://addons-origin.cursecdn.com/files/888/859/dynmap-2.2.jar
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "dynMap" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir Dynmap
+	cd Dynmap
+	wget http://www.freevip.ovh/owncloud/index.php/s/M5xVelosPQU8enN/download
+	wget http://addons-origin.cursecdn.com/files/888/859/dynmap-2.2.jar
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
 else
 echo -e $BLEU "$plugin est introuvable, Il apparaîtra peut-être dans une prochaine version de PluginUtils" $NORMAL
 fi
+
