@@ -382,4 +382,3 @@ then
 else
 echo -e $BLEU "$plugin est introuvable, Il apparaîtra peut-être dans une prochaine version de PluginUtils" $NORMAL
 fi
-#Fin du programme
