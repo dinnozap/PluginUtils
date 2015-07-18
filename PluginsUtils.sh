@@ -112,7 +112,42 @@ then
 	clear
 	echo -e $BLEU "Terminé !" $NORMAL
 	cd ..
-
+elif [ "$plugin" = "worldedit" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir WorldEdit
+	cd WorldEdit
+	wget http://addons-origin.cursecdn.com/files/880/435/worldedit-bukkit-6.1.jar
+	wget http://www.freevip.ovh/owncloud/index.php/s/Q9SuzZcBVEIVT7u/download
+	mv download config.yml
+	gedit config.yml
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "Worldedit" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir WorldEdit
+	cd WorldEdit
+	wget http://addons-origin.cursecdn.com/files/880/435/worldedit-bukkit-6.1.jar
+	wget http://www.freevip.ovh/owncloud/index.php/s/Q9SuzZcBVEIVT7u/download
+	mv download config.yml
+	gedit config.yml
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
+elif [ "$plugin" = "WorldEdit" ]
+then
+	echo -e $BLEU "Téléchargement de $plugin" $NORMAL
+	mkdir WorldEdit
+	cd WorldEdit
+	wget http://addons-origin.cursecdn.com/files/880/435/worldedit-bukkit-6.1.jar
+	wget http://www.freevip.ovh/owncloud/index.php/s/Q9SuzZcBVEIVT7u/download
+	mv download config.yml
+	gedit config.yml
+	clear
+	echo -e $BLEU "Terminé !" $NORMAL
+	cd ..
 else
 echo -e $BLEU "$plugin est introuvable, Il apparaîtra peut-être dans une prochaine version de PluginUtils" $NORMAL
 fi
